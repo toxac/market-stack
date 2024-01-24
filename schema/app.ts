@@ -47,3 +47,30 @@ type service = {
   };
   learningCurve: Learning;
 };
+
+type Rating = {
+  id: number;
+  serviceId: number;
+  usabilityScore: number;
+  learningScore: number;
+  valueScore: number;
+  contributor: string;
+};
+
+type Stack = {
+  id: number;
+  name: string;
+  dateAdded: Date;
+  dateUpdated: Date;
+  contributor: string;
+};
+
+type StackService = {
+  id: number;
+  stackId: number;
+  serviceId: number;
+  dateAdded: Date;
+  dateUpdated: Date;
+  remarks: string;
+  contributor: string;
+};
